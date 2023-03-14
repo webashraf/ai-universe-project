@@ -1,0 +1,56 @@
+/* Spainer style */
+.spainer-parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.spainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.spainer::before{
+    position: absolute; 
+    content: '';
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(255, 255, 255, .3);
+    animation: spainerRing 2s linear infinite;
+}
+@keyframes spainerRing {
+    0%{
+        transform: rotate(0deg);
+        box-shadow: 1px 5px 2px #e65c00;
+    }
+    50%{
+        transform: rotate(180deg);
+        box-shadow: 1px 5px 2px #fe1fe8;
+    }
+    0%{
+        transform: rotate(360deg);
+        box-shadow: 1px 5px 2px #0af1ed;
+    }
+}
+.spainer-text{
+    color: #737373;
+    font-style: 20px;
+    letter-spacing: 1px;
+    line-height: 200px;
+    animation: text 3s ease-in-out infinite;
+}
+@keyframes text {
+    50%{
+        color: #101010;
+    }
+}
+/*  */
+
+/* modal style */

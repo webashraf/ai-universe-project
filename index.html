@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- daisyUi -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.3/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--  -->
+    <!-- Font Awesome icon -->
+    <script src="https://kit.fontawesome.com/c2b476c1ea.js" crossorigin="anonymous"></script>
+    <!-- Link css -->
+    <link rel="stylesheet" href="./style/style.css">
+    <title>AI UNIVERSE</title>
+</head>
+
+<body>
+    <header class="max-w-7xl w-[90%] mx-auto border-b border-pink-300">
+        <nav class="py-5 text-center">
+            <h2 class="text-4xl ">AI Universe Hub</h2>
+            <button onclick="dateSorting()" class="mt-7 btn btn-error text-white rounded-lg">Sort By Date</button>
+        </nav>
+    </header>
+
+    <main class="max-w-7xl w-[80%] mx-auto py-16">
+        <div id="spainer-div" class="spainer-parent">
+            <div class="spainer">
+                <span class="spainer-text">LOADING...</span>
+            </div>
+        </div>
+        <section class="card-sectiojn">
+            <div id="card-parent" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10"></div>
+            <div class="flex justify-center py-11"> <button id="load-more" class="btn btn-error text-white">Load More</button></div>
+            <!-- Modal -->
+            <input type="checkbox" id="my-modal-3" class="modal-toggle" />
+            <div id="modal-parent" class="modal">
+            </div>
+            <!--  -->
+        </section>
+    </main>
+
+
+
+    <!-- Script -->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
